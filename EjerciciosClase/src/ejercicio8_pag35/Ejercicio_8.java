@@ -11,11 +11,11 @@ package ejercicio8_pag35;
 public class Ejercicio_8 {
     public static void main(String[] args) {
         for(int i=1; i<=10; i++){
-            char uno = (char) (Math.random()*26 + 65);
-            if (uno == 'A' || uno == 'E' || uno == 'I' || uno == 'O' || uno == 'U'){
-                System.out.printf("%c es una vocal.\n", uno);
+            char letra = (char) (Math.random()*26 + 65);
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
+                System.out.printf("%d. %c es una vocal.\n", i, letra);
             }else{
-                System.out.printf("%c es una consonante.\n", uno);
+                System.out.printf("%d. %c es una consonante.\n", i, letra);
             }
         }
     }
